@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Number Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Futuristic Number Converter</h1>
+            <button id="theme-toggle">🌙</button>
+            <button id="programming-calculator-btn">🖩 Programming Calculator</button>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <label for="input-number">Enter a value:</label>
+                <input type="text" id="input-number" placeholder="E.g., 123, -12.5, A3">
+                
+                <label for="conversion-base">Convert from:</label>
+                <select id="conversion-base">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+                
+                <label for="main-output-base">Output Base:</label>
+                <select id="main-output-base">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+
+                <button id="convert-btn">Convert</button>
+            </div>
+            
+            <div class="output-section">
+                <h2>Result</h2>
+                <p id="main-output">Output: </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Programming Calculator Modal -->
+    <div id="calculator-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Programming Calculator</h2>
+            <div class="calc-input">
+                <input type="text" id="calc-input1" placeholder="Enter first value">
+                <select id="calc-base1">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+            <div class="calc-operator">
+                <select id="calc-operator">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="calc-input">
+                <input type="text" id="calc-input2" placeholder="Enter second value">
+                <select id="calc-base2">
+                    <option value="decimal">Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+            <label for="output-base">Output Base:</label>
+            <select id="output-base">
+                <option value="decimal">Decimal</option>
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+            <button id="calculate-btn">Calculate</button>
+            <p id="calc-result">Result: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
